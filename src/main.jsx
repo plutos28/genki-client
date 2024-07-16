@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
+import axios from 'axios'
+
+
 import {
   createBrowserRouter,
   RouterProvider
@@ -10,6 +13,8 @@ import {
 
 import Root from "./root.jsx"
 import HomePage from "./homepage.jsx"
+
+axios.defaults.baseURL = 'http://127.0.0.1:3000';
 
 const router = createBrowserRouter([
   {
